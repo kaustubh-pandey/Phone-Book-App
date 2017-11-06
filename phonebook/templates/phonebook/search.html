@@ -1,0 +1,12 @@
+{% extends 'phonebook/index.html' %}
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    {% for field in form2 %}
+       <label> {{ field.label_tag }}</label>
+        {{ field }}<br>
+    {% endfor %}
+    <button>SEARCH</button>
+</form>
+{% endblock %}

@@ -1,0 +1,19 @@
+<html>
+<head><title> The Phone Book</title>
+</head>
+<body bgcolor="black">
+	<font color="yellow">
+<center>
+<a href="{% url 'phonebook:add' %}">ADD NEW NUMBER</a>
+<a href="{% url 'phonebook:search' %}">SEARCH NUMBER</a>
+
+<main>
+      {% block content %}
+      {% endblock %}
+</main>
+</center>
+	*This app is property of Kaustubh Pandey(Kaush)<br>
+	*Copyright
+</font>
+</body>
+</html>
